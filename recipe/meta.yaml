@@ -17,10 +17,11 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
     - cffi        >=1.0.0
-    - toolchain
   run:
     - python
     - cffi        >=1.0.0
