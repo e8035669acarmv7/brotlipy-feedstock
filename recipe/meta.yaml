@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1005
+  number: 1006
   script:
     # Remove linking to C++ runtime on unix
     - sed -i.bak 's/stdc++/m/g' src/brotli/build.py  # [unix]
